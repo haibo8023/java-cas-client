@@ -37,6 +37,23 @@
     </description>
     <url>https://www.apereo.org/cas</url>
 
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>apereo</id>
+            <name>Apereo</name>
+            <organization>Apereo Foundation</organization>
+            <organizationUrl>https://www.apereo.org/</organizationUrl>
+        </developer>
+    </developers>
+
     <scm>
         <connection>scm:git:git@github.com:apereo/java-cas-client.git</connection>
         <developerConnection>scm:git:git@github.com:apereo/java-cas-client.git</developerConnection>
