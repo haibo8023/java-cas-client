@@ -26,7 +26,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apereo.cas.client</groupId>
-    <version>4.0.5-SNAPSHOT</version>
+    <version>4.1.0-SNAPSHOT</version>
     <artifactId>cas-client</artifactId>
     <packaging>pom</packaging>
 
@@ -69,6 +69,15 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>${central.publishing.plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -265,9 +274,10 @@
         <maven.assembly.plugin.version>3.8.0</maven.assembly.plugin.version>
         <maven.javadoc.plugin.version>3.12.0</maven.javadoc.plugin.version>
         <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
+        <central.publishing.plugin.version>0.10.0</central.publishing.plugin.version>
 
-        <project.build.sourceVersion>17</project.build.sourceVersion>
-        <project.build.targetVersion>17</project.build.targetVersion>
+        <project.build.sourceVersion>21</project.build.sourceVersion>
+        <project.build.targetVersion>21</project.build.targetVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
